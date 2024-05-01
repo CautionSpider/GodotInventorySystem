@@ -12,11 +12,13 @@
 # Slot Item
 var item = null
 
+# Based on your video, which worked, this would be func _on_item_button_pressed():
 # Show usage panel for player to use/remove item
 func _on_button_pressed():
 	if item != null:
 		usage_panel.visible = !usage_panel.visible
 
+# Based on your video, which worked, this would be func _on_item_button_mouse_entered():
 # Show item details on hover enter
 func _on_button_mouse_entered():
 	if item != null:
@@ -24,6 +26,7 @@ func _on_button_mouse_entered():
 		details_panel.visible = true
 
 # Hide item details on hover exit
+# Based on your video, which worked, this would be func _on_item_button_mouse_exited():
 func _on_button_mouse_exited():
 	details_panel.visible = false
 
