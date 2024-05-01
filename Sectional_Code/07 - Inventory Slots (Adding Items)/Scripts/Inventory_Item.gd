@@ -24,6 +24,9 @@ func _process(_delta):
 	# Set the texture to reflect in the editor
 	if Engine.is_editor_hint():
 		icon_sprite.texture = item_texture
+	#In your video series on youtube(thankyou) this line was already added by the 7th part but wasn't added in the script for the 7th part on github. was trying to find an error i made while following your tutorial and realised line was missing.
+	if player_in_range and Input.is_action_just_pressed("ui_add"):
+		pickup_item()
 
 # Add item to inventory
 func pickup_item():
